@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dj3w7l4n2q43u"]
+
+[ext_resource type="Script" path="res://CheckmarkToggleItem.gd" id="1_jyp2u"]
+[ext_resource type="Texture2D" uid="uid://b1xhf84syuu4p" path="res://greencheckmark.png" id="2_1smkj"]
+
+[node name="CheckmarkToggleItem" type="TextureButton"]
+custom_minimum_size = Vector2(42, 42)
+offset_right = 28.0
+offset_bottom = 28.0
+scale = Vector2(1.5, 1.5)
+stretch_mode = 0
+script = ExtResource("1_jyp2u")
+
+[node name="Checkmark" type="TextureRect" parent="."]
+visible = false
+custom_minimum_size = Vector2(42, 42)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_1smkj")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

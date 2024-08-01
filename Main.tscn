@@ -1,0 +1,398 @@
+[gd_scene load_steps=60 format=3 uid="uid://gq3xwxul88v8"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_3xaph"]
+[ext_resource type="PackedScene" uid="uid://dj3w7l4n2q43u" path="res://CheckmarkToggleItem.tscn" id="1_f4q4f"]
+[ext_resource type="Texture2D" uid="uid://bw0d7fvgg2cre" path="res://item images/powerup_0023.png" id="2_10t26"]
+[ext_resource type="Texture2D" uid="uid://07dvfkt37ubu" path="res://item images/powerup_0021.png" id="3_5ko50"]
+[ext_resource type="Texture2D" uid="uid://c5r73wc3kqjam" path="res://item images/powerup_0004.png" id="4_0daii"]
+[ext_resource type="Texture2D" uid="uid://c4spffkekjchg" path="res://item images/powerup_0020.png" id="4_p15bv"]
+[ext_resource type="Texture2D" uid="uid://c01cakb3x0y6e" path="res://item images/powerup_0022.png" id="5_78pv0"]
+[ext_resource type="Texture2D" uid="uid://btww2x7bncssk" path="res://item images/powerup_0005.png" id="5_a11qh"]
+[ext_resource type="Texture2D" uid="uid://c1vwp2hfc6tre" path="res://item images/powerup_0025.png" id="6_oankt"]
+[ext_resource type="PackedScene" uid="uid://k6x4hi380aic" path="res://ItemWithCount.tscn" id="6_u21qa"]
+[ext_resource type="Texture2D" uid="uid://bh082v8tq44ow" path="res://item images/powerup_0006.png" id="7_gga6b"]
+[ext_resource type="Texture2D" uid="uid://brctjdl0e7gvy" path="res://item images/powerup_0026.png" id="7_r3wvm"]
+[ext_resource type="Texture2D" uid="uid://bjf41vxfyawns" path="res://item images/powerup_0027.png" id="8_1cbo6"]
+[ext_resource type="Texture2D" uid="uid://cttw0v6558y0l" path="res://item images/powerup_0007.png" id="8_1s33f"]
+[ext_resource type="Texture2D" uid="uid://c4brxkymtytck" path="res://item images/powerup_0028.png" id="9_mcobw"]
+[ext_resource type="Texture2D" uid="uid://c3blnyx3m7acf" path="res://item images/powerup_0009.png" id="9_vctd5"]
+[ext_resource type="Texture2D" uid="uid://cwkvta864dta4" path="res://item images/powerup_0029.png" id="10_phlp6"]
+[ext_resource type="Texture2D" uid="uid://di6r0bncha3" path="res://item images/powerup_0030.png" id="11_dalir"]
+[ext_resource type="Texture2D" uid="uid://mt6w5ul8jl3g" path="res://item images/powerup_0031.png" id="12_01ssx"]
+[ext_resource type="Texture2D" uid="uid://f2335hbl35el" path="res://item images/powerup_0032.png" id="13_b04jc"]
+[ext_resource type="Texture2D" uid="uid://xalomat4cv5u" path="res://item images/powerup_0033.png" id="14_tbrgb"]
+[ext_resource type="Texture2D" uid="uid://dgtcwsiocsspm" path="res://item images/powerup_0034.png" id="15_2672s"]
+[ext_resource type="Texture2D" uid="uid://dk2j6y62xhn2f" path="res://item images/powerup_0035.png" id="16_umc7o"]
+[ext_resource type="Texture2D" uid="uid://x7ks85cn5xik" path="res://item images/powerup_0036.png" id="17_5t433"]
+[ext_resource type="Texture2D" uid="uid://ilqywscjofag" path="res://item images/powerup_0037.png" id="18_p55go"]
+[ext_resource type="Texture2D" uid="uid://bxfarkne7abs0" path="res://item images/powerup_0038.png" id="19_n57qs"]
+[ext_resource type="Texture2D" uid="uid://ct4ytk2xkcdg3" path="res://item images/powerup_0039.png" id="20_mfsyl"]
+[ext_resource type="Texture2D" uid="uid://cxxoyt5sul2vh" path="res://item images/powerup_0040.png" id="21_1g1uq"]
+[ext_resource type="Texture2D" uid="uid://ebrr3e0sao7x" path="res://item images/powerup_0041.png" id="22_imw2s"]
+[ext_resource type="Texture2D" uid="uid://cac76fyxpkmlp" path="res://item images/powerup_0042.png" id="23_n2nmc"]
+[ext_resource type="Texture2D" uid="uid://d0fo0lxysjvu5" path="res://item images/powerup_0043.png" id="24_lg7g0"]
+[ext_resource type="Texture2D" uid="uid://bwn350dsg3m8n" path="res://item images/powerup_0044.png" id="25_6ckq2"]
+[ext_resource type="Texture2D" uid="uid://dben08kv2vy2g" path="res://item images/powerup_0045.png" id="26_4vc7f"]
+[ext_resource type="Texture2D" uid="uid://by4mcgocfsuhr" path="res://item images/powerup_0046.png" id="27_djh5r"]
+[ext_resource type="Texture2D" uid="uid://dyfno0x3yd26y" path="res://item images/powerup_0047.png" id="28_b2rw8"]
+[ext_resource type="Texture2D" uid="uid://ck0nidpxlk365" path="res://item images/powerup_0048.png" id="29_ar4ps"]
+[ext_resource type="Texture2D" uid="uid://en5ow6548nyv" path="res://item images/powerup_0049.png" id="30_cdked"]
+[ext_resource type="Texture2D" uid="uid://uft1erab3leb" path="res://item images/powerup_0050.png" id="31_yu44v"]
+[ext_resource type="Texture2D" uid="uid://bgm8ihiia00ik" path="res://item images/powerup_0051.png" id="32_8ekv1"]
+[ext_resource type="Texture2D" uid="uid://bp42lvms3wle1" path="res://item images/powerup_0052.png" id="33_kbibg"]
+[ext_resource type="Texture2D" uid="uid://pptd27rsmy1r" path="res://item images/powerup_0053.png" id="34_hgx1r"]
+[ext_resource type="Texture2D" uid="uid://baa0nhafcq26k" path="res://item images/powerup_0054.png" id="35_7t4la"]
+[ext_resource type="Texture2D" uid="uid://dnxqovuse5btc" path="res://item images/powerup_0055.png" id="36_1ew8g"]
+[ext_resource type="Texture2D" uid="uid://daasgrm5y4i1f" path="res://item images/powerup_0057.png" id="37_8i4v2"]
+[ext_resource type="Texture2D" uid="uid://fao6cme84mhw" path="res://item images/powerup_0058.png" id="38_4ppfd"]
+[ext_resource type="Texture2D" uid="uid://c3qx60nd8vgmn" path="res://item images/powerup_0060.png" id="39_6nbpl"]
+[ext_resource type="Texture2D" uid="uid://btk46ug810fom" path="res://item images/powerup_0061.png" id="40_fv0ul"]
+[ext_resource type="Texture2D" uid="uid://c36qdhe154hh8" path="res://item images/powerup_0062.png" id="41_ekxur"]
+[ext_resource type="Texture2D" uid="uid://cm8jl6h83tm42" path="res://item images/powerup_0063.png" id="42_xes6q"]
+[ext_resource type="Texture2D" uid="uid://d0ksh7tcl8atl" path="res://item images/powerup_0064.png" id="43_wnjqk"]
+[ext_resource type="Texture2D" uid="uid://dd73o0iyqkh8e" path="res://item images/powerup_0065.png" id="44_sh3wf"]
+[ext_resource type="Texture2D" uid="uid://d3wy0sevm3302" path="res://item images/powerup_0066.png" id="45_hjdqo"]
+[ext_resource type="Texture2D" uid="uid://b2sxxrfitunla" path="res://item images/powerup_0067.png" id="46_ymdlu"]
+[ext_resource type="Texture2D" uid="uid://bwxicho0qkyq0" path="res://item images/questitem_0013.png" id="47_h6r38"]
+[ext_resource type="Texture2D" uid="uid://crlryej77wt4d" path="res://item images/questitem_0014.png" id="48_ehlqv"]
+[ext_resource type="Texture2D" uid="uid://dciqj42usdvic" path="res://item images/questitem_0017.png" id="49_t8lgv"]
+[ext_resource type="Texture2D" uid="uid://7beuiyuujrb7" path="res://item images/questitem_0016.png" id="51_pgy6q"]
+[ext_resource type="Texture2D" uid="uid://bok58ba0637k1" path="res://item images/powerup_0015.png" id="56_vbmhj"]
+[ext_resource type="Texture2D" uid="uid://4jmgc0wpj6v7" path="res://item images/powerup_0002.png" id="59_unqwh"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3xaph")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 5
+
+[node name="CheckmarkToggleItem" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("2_10t26")
+item_name = "Knife"
+
+[node name="CheckmarkToggleItem3" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("3_5ko50")
+item_name = "Orbitar_Sable"
+
+[node name="CheckmarkToggleItem2" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("4_p15bv")
+item_name = "Orbitar_Celia"
+
+[node name="CheckmarkToggleItem4" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("5_78pv0")
+item_name = "Orbitar_Both"
+
+[node name="CheckmarkToggleItem5" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("6_oankt")
+item_name = "Cross_Bomb"
+
+[node name="CheckmarkToggleItem6" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("7_r3wvm")
+item_name = "Cluster_Bomb"
+
+[node name="CheckmarkToggleItem7" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("8_1cbo6")
+item_name = "Bomb_Fuel"
+
+[node name="CheckmarkToggleItem23" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("23_n2nmc")
+item_name = "Bomb_Extend"
+
+[node name="CheckmarkToggleItem9" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("10_phlp6")
+item_name = "Speed_Boots"
+
+[node name="CheckmarkToggleItem28" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("28_b2rw8")
+item_name = "Iceslipping_Boots"
+
+[node name="CheckmarkToggleItem10" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("11_dalir")
+item_name = "Slide_Boots"
+
+[node name="CheckmarkToggleItem24" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("24_lg7g0")
+item_name = "Airdash_Boots"
+
+[node name="CheckmarkToggleItem8" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("9_mcobw")
+item_name = "High_Jump"
+
+[node name="CheckmarkToggleItem13" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("13_b04jc")
+item_name = "Double_Jump"
+
+[node name="CheckmarkToggleItem12" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("12_01ssx")
+item_name = "Wall_Jump"
+
+[node name="CheckmarkToggleItem15" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("15_2672s")
+item_name = "Hydrodynamo"
+
+[node name="CheckmarkToggleItem14" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("14_tbrgb")
+item_name = "Jetpack"
+
+[node name="CheckmarkToggleItem44" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("44_sh3wf")
+item_name = "Airy_Powder"
+
+[node name="CheckmarkToggleItem43" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("43_wnjqk")
+item_name = "Vortex_Gloves"
+
+[node name="CheckmarkToggleItem16" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("16_umc7o")
+item_name = "Golden_Dodge"
+
+[node name="CheckmarkToggleItem17" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("17_5t433")
+item_name = "Gas_Mask"
+
+[node name="CheckmarkToggleItem22" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("22_imw2s")
+item_name = "Antidote"
+
+[node name="CheckmarkToggleItem30" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("30_cdked")
+item_name = "Tempurture"
+
+[node name="CheckmarkToggleItem46" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("46_ymdlu")
+item_name = "Alembic_Crystal"
+
+[node name="CheckmarkToggleItem41" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("41_ekxur")
+item_name = "Alterscope"
+
+[node name="CheckmarkToggleItem39" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("39_6nbpl")
+item_name = "Soul_Burst"
+
+[node name="CheckmarkToggleItem18" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("18_p55go")
+item_name = "Sable_B"
+
+[node name="CheckmarkToggleItem19" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("19_n57qs")
+item_name = "Sable_C"
+
+[node name="CheckmarkToggleItem20" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("20_mfsyl")
+item_name = "Celia_B"
+
+[node name="CheckmarkToggleItem21" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("21_1g1uq")
+item_name = "Celia_C"
+
+[node name="CheckmarkToggleItem31" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("31_yu44v")
+item_name = "Core_Expansion"
+
+[node name="CheckmarkToggleItem32" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("32_8ekv1")
+item_name = "Core_Expansion_Up"
+
+[node name="CheckmarkToggleItem33" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("33_kbibg")
+item_name = "Core_Expansion_Down"
+
+[node name="CheckmarkToggleItem25" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("25_6ckq2")
+item_name = "Tartarus_Ticket"
+
+[node name="CheckmarkToggleItem26" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("26_4vc7f")
+item_name = "Valhalla_Ticket"
+
+[node name="CheckmarkToggleItem36" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("36_1ew8g")
+item_name = "Rank_Wrench"
+
+[node name="CheckmarkToggleItem34" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("34_hgx1r")
+item_name = "Deadly_Reach"
+
+[node name="CheckmarkToggleItem38" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("38_4ppfd")
+item_name = "Rapid_Shot"
+
+[node name="CheckmarkToggleItem35" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("35_7t4la")
+item_name = "Bangle"
+
+[node name="CheckmarkToggleItem40" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("40_fv0ul")
+item_name = "Richmans_Glove"
+
+[node name="CheckmarkToggleItem37" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("37_8i4v2")
+item_name = "Wonder_Waffle_Recipe"
+
+[node name="CheckmarkToggleItem29" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("29_ar4ps")
+item_name = "Compass"
+
+[node name="CheckmarkToggleItem45" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("45_hjdqo")
+item_name = "Toebeans"
+
+[node name="CheckmarkToggleItem27" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("27_djh5r")
+item_name = "Stats_Brooch"
+
+[node name="CheckmarkToggleItem49" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("49_t8lgv")
+item_name = "Library_Key"
+
+[node name="CheckmarkToggleItem47" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("47_h6r38")
+item_name = "Left_Hand"
+
+[node name="CheckmarkToggleItem48" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("48_ehlqv")
+item_name = "Right_Hand"
+
+[node name="CheckmarkToggleItem42" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("42_xes6q")
+item_name = "Dual_Hands"
+
+[node name="CheckmarkToggleItem50" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+layout_mode = 2
+texture_normal = ExtResource("51_pgy6q")
+item_name = "Bunny_Pillow"
+
+[node name="GridContainer2" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = -6.40508
+offset_top = 478.492
+offset_right = 229.595
+offset_bottom = 654.492
+columns = 4
+
+[node name="HealthPotion" parent="GridContainer2" instance=ExtResource("6_u21qa")]
+layout_mode = 2
+item_name = "HP_Potions"
+
+[node name="ManaPotion" parent="GridContainer2" instance=ExtResource("6_u21qa")]
+layout_mode = 2
+texture = ExtResource("4_0daii")
+item_name = "MP_Potion"
+
+[node name="EPPotion" parent="GridContainer2" instance=ExtResource("6_u21qa")]
+layout_mode = 2
+texture = ExtResource("5_a11qh")
+item_name = "EP_Potion"
+
+[node name="MeleeAttackPotion" parent="GridContainer2" instance=ExtResource("6_u21qa")]
+layout_mode = 2
+texture = ExtResource("7_gga6b")
+item_name = "Melee_Potion"
+
+[node name="RangedAttackPotion" parent="GridContainer2" instance=ExtResource("6_u21qa")]
+layout_mode = 2
+texture = ExtResource("8_1s33f")
+item_name = "Ranged_Potion"
+
+[node name="RainbowPotion" parent="GridContainer2" instance=ExtResource("6_u21qa")]
+layout_mode = 2
+texture = ExtResource("9_vctd5")
+item_name = "Rainbow_Potion"
+
+[node name="Bags" parent="GridContainer2" instance=ExtResource("6_u21qa")]
+layout_mode = 2
+texture = ExtResource("56_vbmhj")
+item_name = "Bags"
+
+[node name="AstralGearCount" parent="GridContainer2" instance=ExtResource("6_u21qa")]
+layout_mode = 2
+texture = ExtResource("59_unqwh")
+item_name = "Astral_Gears"
+
+[node name="SaveButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 662.0
+offset_right = 184.0
+offset_bottom = 693.0
+text = "Save"
+
+[node name="ResetButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 662.0
+offset_right = 72.0
+offset_bottom = 693.0
+text = "Reset"
+
+[node name="PopupMenu" type="PopupMenu" parent="."]
+title = "Reset everything???!?!?!"
+position = Vector2i(0, 600)
+size = Vector2i(100, 62)
+item_count = 2
+item_0/text = "Yes"
+item_0/id = 0
+item_1/text = "Cancel"
+item_1/id = 1
+
+[connection signal="pressed" from="SaveButton" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="id_pressed" from="PopupMenu" to="." method="_on_popup_menu_id_pressed"]

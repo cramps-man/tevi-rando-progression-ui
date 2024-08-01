@@ -10,6 +10,7 @@ offset_bottom = 28.0
 scale = Vector2(1.5, 1.5)
 stretch_mode = 0
 script = ExtResource("1_jyp2u")
+number_of_lights = 3
 
 [node name="Checkmark" type="TextureRect" parent="."]
 visible = false
@@ -19,4 +20,11 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_1smkj")
 
-[connection signal="pressed" from="." to="." method="_on_pressed"]
+[node name="NumberOfLights" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 1
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

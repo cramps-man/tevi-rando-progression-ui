@@ -1,12 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://k6x4hi380aic"]
+[gd_scene load_steps=4 format=3 uid="uid://k6x4hi380aic"]
 
 [ext_resource type="Texture2D" uid="uid://b6wveenbk0rj5" path="res://item images/powerup_0003.png" id="1_v20i7"]
 [ext_resource type="Script" path="res://ItemWithCount.gd" id="2_otyv4"]
-[ext_resource type="Texture2D" uid="uid://c72ybaw8yoggg" path="res://uparrow.png" id="3_2pl8b"]
-[ext_resource type="Texture2D" uid="uid://buoplffcxiap0" path="res://downarrow.png" id="4_1iifs"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pooyn"]
 font_size = 24
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
 
 [node name="ItemWithCount" type="TextureRect"]
 custom_minimum_size = Vector2(56, 56)
@@ -16,47 +16,14 @@ scale = Vector2(2, 2)
 texture = ExtResource("1_v20i7")
 script = ExtResource("2_otyv4")
 
-[node name="UpButton" type="TextureButton" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 10.0
-offset_top = -28.0
-offset_right = 38.0
-offset_bottom = -15.0
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = ExtResource("3_2pl8b")
-stretch_mode = 0
-
-[node name="DownButton" type="TextureButton" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 9.5
-offset_top = -13.0
-offset_right = 37.5
-offset_bottom = 2.0
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = ExtResource("4_1iifs")
-stretch_mode = 0
-
 [node name="CountDisplay" type="Label" parent="."]
 layout_mode = 0
 offset_left = 7.0
-offset_top = 24.5
+offset_top = 26.5
 offset_right = 47.0
-offset_bottom = 61.5
+offset_bottom = 63.5
 text = "0"
 label_settings = SubResource("LabelSettings_pooyn")
 horizontal_alignment = 1
 
-[connection signal="pressed" from="UpButton" to="." method="_on_up_button_pressed"]
-[connection signal="pressed" from="DownButton" to="." method="_on_down_button_pressed"]
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

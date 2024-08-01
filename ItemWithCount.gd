@@ -3,13 +3,15 @@ extends TextureRect
 @export var item_name := ""
 var count := 0
 
-func _on_up_button_pressed() -> void:
-	count += 1
-	update_display_count()
-
-func _on_down_button_pressed() -> void:
-	count -= 1
-	update_display_count()
+func _on_gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.pressed:
+		match event.button_index:
+			MOUSE_BUTTON_LEFT:
+				count += 1
+				update_display_count()
+			MOUSE_BUTTON_RIGHT:
+				count -= 1
+				update_display_count()
 
 func update_display_count() -> void:
 	$CountDisplay.text = str(count)

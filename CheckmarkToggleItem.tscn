@@ -22,9 +22,9 @@ texture = ExtResource("2_1smkj")
 
 [node name="NumberOfLights" type="HBoxContainer" parent="."]
 layout_mode = 0
-offset_top = 29.0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_top = 35.0
+offset_right = 42.0
+offset_bottom = 46.0
 alignment = 1
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]

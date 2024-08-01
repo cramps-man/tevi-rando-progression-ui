@@ -75,250 +75,278 @@ offset_right = 40.0
 offset_bottom = 40.0
 columns = 5
 
-[node name="CheckmarkToggleItem" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Dagger" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("2_10t26")
 item_name = "Knife"
 
-[node name="CheckmarkToggleItem3" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Sable" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("3_5ko50")
 item_name = "Orbitar_Sable"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem2" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Celia" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("4_p15bv")
 item_name = "Orbitar_Celia"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem4" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Orbitars" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("5_78pv0")
 item_name = "Orbitar_Both"
 
-[node name="CheckmarkToggleItem5" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="CrossBomb" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("6_oankt")
 item_name = "Cross_Bomb"
 
-[node name="CheckmarkToggleItem6" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="ClusterBomb" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("7_r3wvm")
 item_name = "Cluster_Bomb"
 
-[node name="CheckmarkToggleItem7" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="BombFuel" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("8_1cbo6")
 item_name = "Bomb_Fuel"
 
-[node name="CheckmarkToggleItem23" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Combustible" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("23_n2nmc")
 item_name = "Bomb_Extend"
 
-[node name="CheckmarkToggleItem9" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="SpeedBoots" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("10_phlp6")
 item_name = "Speed_Boots"
 
-[node name="CheckmarkToggleItem28" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="IceSlipBoots" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("28_b2rw8")
 item_name = "Iceslipping_Boots"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem10" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="SlickBoots" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("11_dalir")
 item_name = "Slide_Boots"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem24" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Airdash" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("24_lg7g0")
 item_name = "Airdash_Boots"
 
-[node name="CheckmarkToggleItem8" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="HighJump" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("9_mcobw")
 item_name = "High_Jump"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem13" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="DoubleJump" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("13_b04jc")
 item_name = "Double_Jump"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem12" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="WallJump" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("12_01ssx")
 item_name = "Wall_Jump"
 
-[node name="CheckmarkToggleItem15" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Hydrodynamo" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("15_2672s")
 item_name = "Hydrodynamo"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem14" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Jetpack" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("14_tbrgb")
 item_name = "Jetpack"
 
-[node name="CheckmarkToggleItem44" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="AiryPowder" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("44_sh3wf")
 item_name = "Airy_Powder"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem43" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="VortexGloves" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("43_wnjqk")
 item_name = "Vortex_Gloves"
 
-[node name="CheckmarkToggleItem16" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="GoldenDodge" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("16_umc7o")
 item_name = "Golden_Dodge"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem17" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="GasMask" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("17_5t433")
 item_name = "Gas_Mask"
 
-[node name="CheckmarkToggleItem22" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Antidote" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("22_imw2s")
 item_name = "Antidote"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem30" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="TempertureRing" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("30_cdked")
 item_name = "Tempurture"
 
-[node name="CheckmarkToggleItem46" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="AlembicCrystal" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("46_ymdlu")
 item_name = "Alembic_Crystal"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem41" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Alterscope" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("41_ekxur")
 item_name = "Alterscope"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem39" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="SoulBurst" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("39_6nbpl")
 item_name = "Soul_Burst"
 
-[node name="CheckmarkToggleItem18" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="SableB" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("18_p55go")
 item_name = "Sable_B"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem19" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="SableC" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("19_n57qs")
 item_name = "Sable_C"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem20" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="CeliaB" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("20_mfsyl")
 item_name = "Celia_B"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem21" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="CeliaC" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("21_1g1uq")
 item_name = "Celia_C"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem31" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="CoreExpansion" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("31_yu44v")
 item_name = "Core_Expansion"
 
-[node name="CheckmarkToggleItem32" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="CoreExpansionUp" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("32_8ekv1")
 item_name = "Core_Expansion_Up"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem33" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="CoreExpansionDown" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("33_kbibg")
 item_name = "Core_Expansion_Down"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem25" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="TartarusTicket" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("25_6ckq2")
 item_name = "Tartarus_Ticket"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem26" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="ValhallaTicket" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("26_4vc7f")
 item_name = "Valhalla_Ticket"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem36" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="RankWrench" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("36_1ew8g")
 item_name = "Rank_Wrench"
 
-[node name="CheckmarkToggleItem34" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="DeadlyReach" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("34_hgx1r")
 item_name = "Deadly_Reach"
 
-[node name="CheckmarkToggleItem38" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="RapidShot" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("38_4ppfd")
 item_name = "Rapid_Shot"
 
-[node name="CheckmarkToggleItem35" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Bangle" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("35_7t4la")
 item_name = "Bangle"
 
-[node name="CheckmarkToggleItem40" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="TreasureGloves" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("40_fv0ul")
 item_name = "Richmans_Glove"
 
-[node name="CheckmarkToggleItem37" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="WaffleRecipe" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("37_8i4v2")
 item_name = "Wonder_Waffle_Recipe"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem29" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Compass" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("29_ar4ps")
 item_name = "Compass"
 
-[node name="CheckmarkToggleItem45" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="Toebeans" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("45_hjdqo")
 item_name = "Toebeans"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem27" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="StatsBrooch" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("27_djh5r")
 item_name = "Stats_Brooch"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem49" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="LibraryKey" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("49_t8lgv")
 item_name = "Library_Key"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem47" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="LeftHand" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("47_h6r38")
 item_name = "Left_Hand"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem48" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="RightHand" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("48_ehlqv")
 item_name = "Right_Hand"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem42" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="DualHands" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("42_xes6q")
 item_name = "Dual_Hands"
+number_of_lights = 1
 
-[node name="CheckmarkToggleItem50" parent="GridContainer" instance=ExtResource("1_f4q4f")]
+[node name="BunnyPillow" parent="GridContainer" instance=ExtResource("1_f4q4f")]
 layout_mode = 2
 texture_normal = ExtResource("51_pgy6q")
 item_name = "Bunny_Pillow"
+number_of_lights = 1
 
 [node name="GridContainer2" type="GridContainer" parent="."]
 layout_mode = 0

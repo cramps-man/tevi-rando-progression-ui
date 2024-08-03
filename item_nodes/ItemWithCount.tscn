@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://k6x4hi380aic"]
 
-[ext_resource type="Texture2D" uid="uid://b6wveenbk0rj5" path="res://item images/powerup_0003.png" id="1_v20i7"]
-[ext_resource type="Script" path="res://ItemWithCount.gd" id="2_otyv4"]
+[ext_resource type="Texture2D" uid="uid://b6wveenbk0rj5" path="res://item images/powerup_0003.png" id="1_52y6v"]
+[ext_resource type="Script" path="res://item_nodes/ItemWithCount.gd" id="2_spkol"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pooyn"]
 font_size = 24
@@ -13,8 +13,8 @@ custom_minimum_size = Vector2(56, 56)
 offset_right = 56.0
 offset_bottom = 56.0
 scale = Vector2(2, 2)
-texture = ExtResource("1_v20i7")
-script = ExtResource("2_otyv4")
+texture = ExtResource("1_52y6v")
+script = ExtResource("2_spkol")
 
 [node name="CountDisplay" type="Label" parent="."]
 layout_mode = 0

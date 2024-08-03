@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gohocwc23xof"
-path="res://.godot/imported/light.png-06e94102f0cce323cff7daad56cf3030.ctex"
+uid="uid://c72ybaw8yoggg"
+path="res://.godot/imported/uparrow.png-b28a5a6bde10589c80cf38a23cb83388.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://light.png"
-dest_files=["res://.godot/imported/light.png-06e94102f0cce323cff7daad56cf3030.ctex"]
+source_file="res://unused_assets/uparrow.png"
+dest_files=["res://.godot/imported/uparrow.png-b28a5a6bde10589c80cf38a23cb83388.ctex"]
 
 [params]
 

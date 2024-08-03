@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://buoplffcxiap0"
-path="res://.godot/imported/downarrow.png-d9df94d6b779b2a29344490a7ee4ca36.ctex"
+uid="uid://b1xhf84syuu4p"
+path="res://.godot/imported/greencheckmark.png-e687ecc6e4cc4033bc77aebe478ebad5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://downarrow.png"
-dest_files=["res://.godot/imported/downarrow.png-d9df94d6b779b2a29344490a7ee4ca36.ctex"]
+source_file="res://unused_assets/greencheckmark.png"
+dest_files=["res://.godot/imported/greencheckmark.png-e687ecc6e4cc4033bc77aebe478ebad5.ctex"]
 
 [params]
 

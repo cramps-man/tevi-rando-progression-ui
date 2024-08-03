@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cw8xwahndfxrx"]
 
-[ext_resource type="Texture2D" uid="uid://gohocwc23xof" path="res://light.png" id="1_v3i1i"]
-[ext_resource type="Script" path="res://Light.gd" id="2_sjwe3"]
+[ext_resource type="Texture2D" uid="uid://gohocwc23xof" path="res://item_nodes/light.png" id="1_v3i1i"]
+[ext_resource type="Script" path="res://item_nodes/Light.gd" id="2_sjwe3"]
 
 [node name="Light" type="TextureRect"]
 modulate = Color(1, 1, 1, 0.498039)

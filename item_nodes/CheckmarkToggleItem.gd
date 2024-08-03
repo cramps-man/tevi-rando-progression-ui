@@ -1,6 +1,6 @@
 extends TextureButton
 
-const light_scene := preload("res://Light.tscn")
+const light_scene := preload("res://item_nodes/Light.tscn")
 
 @export var item_name := ""
 @export var number_of_lights := 1

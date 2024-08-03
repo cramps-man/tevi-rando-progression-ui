@@ -1,7 +1,7 @@
 [gd_scene load_steps=60 format=3 uid="uid://gq3xwxul88v8"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_3xaph"]
-[ext_resource type="PackedScene" uid="uid://dj3w7l4n2q43u" path="res://CheckmarkToggleItem.tscn" id="1_f4q4f"]
+[ext_resource type="PackedScene" uid="uid://dj3w7l4n2q43u" path="res://item_nodes/CheckmarkToggleItem.tscn" id="1_f4q4f"]
 [ext_resource type="Texture2D" uid="uid://bw0d7fvgg2cre" path="res://item images/powerup_0023.png" id="2_10t26"]
 [ext_resource type="Texture2D" uid="uid://07dvfkt37ubu" path="res://item images/powerup_0021.png" id="3_5ko50"]
 [ext_resource type="Texture2D" uid="uid://c5r73wc3kqjam" path="res://item images/powerup_0004.png" id="4_0daii"]
@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://c01cakb3x0y6e" path="res://item images/powerup_0022.png" id="5_78pv0"]
 [ext_resource type="Texture2D" uid="uid://btww2x7bncssk" path="res://item images/powerup_0005.png" id="5_a11qh"]
 [ext_resource type="Texture2D" uid="uid://c1vwp2hfc6tre" path="res://item images/powerup_0025.png" id="6_oankt"]
-[ext_resource type="PackedScene" uid="uid://k6x4hi380aic" path="res://ItemWithCount.tscn" id="6_u21qa"]
+[ext_resource type="PackedScene" uid="uid://k6x4hi380aic" path="res://item_nodes/ItemWithCount.tscn" id="6_u21qa"]
 [ext_resource type="Texture2D" uid="uid://bh082v8tq44ow" path="res://item images/powerup_0006.png" id="7_gga6b"]
 [ext_resource type="Texture2D" uid="uid://brctjdl0e7gvy" path="res://item images/powerup_0026.png" id="7_r3wvm"]
 [ext_resource type="Texture2D" uid="uid://bjf41vxfyawns" path="res://item images/powerup_0027.png" id="8_1cbo6"]

@@ -1,13 +1,17 @@
 extends Control
 
+const save_messsage_scene := preload("res://save_message.tscn")
+
 var current_data := {}
 
 func _ready() -> void:
-	Autosave.main_node = self
 	Autosave.timeout.connect(_on_save_button_pressed)
 	
 	var save_game = FileAccess.open("user://savegame.save", FileAccess.READ)
-	current_data = JSON.parse_string(save_game.get_line())
+	var data = JSON.parse_string(save_game.get_line())
+	if data == null:
+		return
+	current_data = data
 	
 	for child in $GridContainer.get_children():
 		child.load(current_data)
@@ -28,6 +32,8 @@ func _on_save_button_pressed() -> void:
 
 	var save_game = FileAccess.open("user://savegame.save", FileAccess.WRITE)
 	save_game.store_line(JSON.stringify(current_data))
+
+	animate_save_message()
 
 func _on_reset_button_pressed() -> void:
 	$PopupMenu.popup()
@@ -50,3 +56,8 @@ func update_autosave_button_text() -> void:
 	else:
 		$AutosaveButton.text = "Autosave OFF"
 		$SaveButton.disabled = false
+
+func animate_save_message() -> void:
+	var save_message := save_messsage_scene.instantiate()
+	add_child(save_message)
+	save_message.animate_save_message($SaveButton.position)

@@ -41,3 +41,4 @@ func _on_gui_input(event: InputEvent) -> void:
 				if current_lights_on > 0:
 					current_lights_on -= 1
 					set_all_lights()
+		Autosave.trigger_autosave()

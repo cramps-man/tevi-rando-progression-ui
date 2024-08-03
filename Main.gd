@@ -3,6 +3,9 @@ extends Control
 var current_data := {}
 
 func _ready() -> void:
+	Autosave.main_node = self
+	Autosave.timeout.connect(_on_save_button_pressed)
+	
 	var save_game = FileAccess.open("user://savegame.save", FileAccess.READ)
 	current_data = JSON.parse_string(save_game.get_line())
 	
@@ -43,5 +46,7 @@ func _on_autosave_button_pressed() -> void:
 func update_autosave_button_text() -> void:
 	if Autosave.autosave:
 		$AutosaveButton.text = "Autosave ON"
+		$SaveButton.disabled = true
 	else:
 		$AutosaveButton.text = "Autosave OFF"
+		$SaveButton.disabled = false

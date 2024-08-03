@@ -12,6 +12,7 @@ func _on_gui_input(event: InputEvent) -> void:
 			MOUSE_BUTTON_RIGHT:
 				count -= 1
 				update_display_count()
+		Autosave.trigger_autosave()
 
 func update_display_count() -> void:
 	$CountDisplay.text = str(count)

@@ -396,20 +396,41 @@ texture = ExtResource("59_unqwh")
 item_name = "Astral_Gears"
 
 [node name="SaveButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 140.0
-offset_top = 662.0
-offset_right = 184.0
-offset_bottom = 693.0
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -44.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
 text = "Save"
 
 [node name="ResetButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 21.0
-offset_top = 662.0
-offset_right = 72.0
-offset_bottom = 693.0
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+offset_right = 51.0
+grow_vertical = 0
 text = "Reset"
+
+[node name="AutosaveButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -57.0
+offset_top = -31.0
+offset_right = 57.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Autosave OFF"
 
 [node name="PopupMenu" type="PopupMenu" parent="."]
 title = "Reset everything???!?!?!"
@@ -423,4 +444,5 @@ item_1/id = 1
 
 [connection signal="pressed" from="SaveButton" to="." method="_on_save_button_pressed"]
 [connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="AutosaveButton" to="." method="_on_autosave_button_pressed"]
 [connection signal="id_pressed" from="PopupMenu" to="." method="_on_popup_menu_id_pressed"]

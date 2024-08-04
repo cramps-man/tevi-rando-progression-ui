@@ -418,7 +418,7 @@ offset_right = 51.0
 grow_vertical = 0
 text = "Reset"
 
-[node name="PopupMenu" type="PopupMenu" parent="."]
+[node name="ResetPopupMenu" type="PopupMenu" parent="."]
 title = "Reset everything???!?!?!"
 position = Vector2i(0, 628)
 size = Vector2i(100, 62)
@@ -453,8 +453,28 @@ offset_bottom = -36.0
 grow_vertical = 0
 text = "Default Size"
 
+[node name="OneItemModeButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -103.0
+offset_right = 162.0
+offset_bottom = -72.0
+grow_vertical = 0
+text = "One Item Mode OFF"
+
+[node name="OneTimeModePopupMenu" type="PopupMenu" parent="."]
+position = Vector2i(0, 582)
+size = Vector2i(143, 35)
+item_count = 1
+item_0/text = "Confirm toggle"
+item_0/id = 0
+
 [connection signal="pressed" from="SaveButton" to="." method="_on_save_button_pressed"]
 [connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
-[connection signal="id_pressed" from="PopupMenu" to="." method="_on_popup_menu_id_pressed"]
+[connection signal="id_pressed" from="ResetPopupMenu" to="." method="_on_popup_menu_id_pressed"]
 [connection signal="pressed" from="AutosaveButton" to="." method="_on_autosave_button_pressed"]
 [connection signal="pressed" from="DefaultSizeButton" to="." method="_on_default_size_button_pressed"]
+[connection signal="pressed" from="OneItemModeButton" to="." method="_on_one_item_mode_button_pressed"]
+[connection signal="id_pressed" from="OneTimeModePopupMenu" to="." method="_on_one_time_mode_popup_menu_id_pressed"]

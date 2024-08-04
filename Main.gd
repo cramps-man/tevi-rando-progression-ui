@@ -21,6 +21,9 @@ func _ready() -> void:
 	if current_data.has("should_autosave"):
 		Autosave.autosave = current_data.should_autosave
 		update_autosave_button_text()
+	if current_data.has("one_item_mode"):
+		Globals.one_item_mode = current_data.one_item_mode
+		update_oneitemmode_button_text()
 
 func _on_save_button_pressed() -> void:
 	for child in $GridContainer.get_children():
@@ -29,6 +32,7 @@ func _on_save_button_pressed() -> void:
 		child.save(current_data)
 	
 	current_data.should_autosave = Autosave.autosave
+	current_data.one_item_mode = Globals.one_item_mode
 
 	var save_game = FileAccess.open("user://savegame.save", FileAccess.WRITE)
 	save_game.store_line(JSON.stringify(current_data))
@@ -36,7 +40,7 @@ func _on_save_button_pressed() -> void:
 	animate_save_message()
 
 func _on_reset_button_pressed() -> void:
-	$PopupMenu.popup()
+	$ResetPopupMenu.popup()
 
 func _on_popup_menu_id_pressed(id: int) -> void:
 	if id == 0:
@@ -64,3 +68,17 @@ func animate_save_message() -> void:
 
 func _on_default_size_button_pressed() -> void:
 	ProjectUtils.set_window_size(1.0)
+
+func _on_one_item_mode_button_pressed() -> void:
+	$OneTimeModePopupMenu.popup()
+
+func _on_one_time_mode_popup_menu_id_pressed(id: int) -> void:
+	Globals.one_item_mode = !Globals.one_item_mode
+	update_oneitemmode_button_text()
+
+func update_oneitemmode_button_text() -> void:
+	if Globals.one_item_mode:
+		$OneItemModeButton.text = "One Item Mode ON"
+	else:
+		$OneItemModeButton.text = "One Item Mode OFF"
+

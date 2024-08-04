@@ -21,6 +21,7 @@ config/icon="res://unused_assets/icon.svg"
 
 Autosave="*res://autoloads/autosave.gd"
 ProjectUtils="*res://autoloads/project_utils.gd"
+Globals="*res://autoloads/globals.gd"
 
 [display]
 

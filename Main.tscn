@@ -350,10 +350,10 @@ number_of_lights = 1
 
 [node name="GridContainer2" type="GridContainer" parent="."]
 layout_mode = 0
-offset_left = -6.40508
-offset_top = 478.492
-offset_right = 229.595
-offset_bottom = 654.492
+offset_left = -6.0
+offset_top = 478.0
+offset_right = 230.0
+offset_bottom = 594.0
 columns = 4
 
 [node name="HealthPotion" parent="GridContainer2" instance=ExtResource("6_u21qa")]
@@ -418,6 +418,16 @@ offset_right = 51.0
 grow_vertical = 0
 text = "Reset"
 
+[node name="PopupMenu" type="PopupMenu" parent="."]
+title = "Reset everything???!?!?!"
+position = Vector2i(0, 628)
+size = Vector2i(100, 62)
+item_count = 2
+item_0/text = "Yes"
+item_0/id = 0
+item_1/text = "Cancel"
+item_1/id = 1
+
 [node name="AutosaveButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 7
@@ -432,17 +442,19 @@ grow_horizontal = 2
 grow_vertical = 0
 text = "Autosave OFF"
 
-[node name="PopupMenu" type="PopupMenu" parent="."]
-title = "Reset everything???!?!?!"
-position = Vector2i(0, 600)
-size = Vector2i(100, 62)
-item_count = 2
-item_0/text = "Yes"
-item_0/id = 0
-item_1/text = "Cancel"
-item_1/id = 1
+[node name="DefaultSizeButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -67.0
+offset_right = 100.0
+offset_bottom = -36.0
+grow_vertical = 0
+text = "Default Size"
 
 [connection signal="pressed" from="SaveButton" to="." method="_on_save_button_pressed"]
 [connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
-[connection signal="pressed" from="AutosaveButton" to="." method="_on_autosave_button_pressed"]
 [connection signal="id_pressed" from="PopupMenu" to="." method="_on_popup_menu_id_pressed"]
+[connection signal="pressed" from="AutosaveButton" to="." method="_on_autosave_button_pressed"]
+[connection signal="pressed" from="DefaultSizeButton" to="." method="_on_default_size_button_pressed"]

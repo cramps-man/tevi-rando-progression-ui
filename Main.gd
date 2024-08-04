@@ -61,3 +61,6 @@ func animate_save_message() -> void:
 	var save_message := save_messsage_scene.instantiate()
 	add_child(save_message)
 	save_message.animate_save_message($SaveButton.position)
+
+func _on_default_size_button_pressed() -> void:
+	ProjectUtils.set_window_size(1.0)

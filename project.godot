@@ -20,6 +20,7 @@ config/icon="res://unused_assets/icon.svg"
 [autoload]
 
 Autosave="*res://autoloads/autosave.gd"
+ProjectUtils="*res://autoloads/project_utils.gd"
 
 [display]
 

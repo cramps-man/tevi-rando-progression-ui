@@ -13,17 +13,17 @@ func _ready() -> void:
 		return
 	current_data = data
 	
-	for child in $GridContainer.get_children():
-		child.load(current_data)
-	for child in $GridContainer2.get_children():
-		child.load(current_data)
-	
 	if current_data.has("should_autosave"):
 		Autosave.autosave = current_data.should_autosave
 		update_autosave_button_text()
 	if current_data.has("one_item_mode"):
 		Globals.one_item_mode = current_data.one_item_mode
 		update_oneitemmode_button_text()
+
+	for child in $GridContainer.get_children():
+		child.load(current_data)
+	for child in $GridContainer2.get_children():
+		child.load(current_data)
 
 func _on_save_button_pressed() -> void:
 	for child in $GridContainer.get_children():
@@ -75,6 +75,8 @@ func _on_one_item_mode_button_pressed() -> void:
 func _on_one_time_mode_popup_menu_id_pressed(id: int) -> void:
 	Globals.one_item_mode = !Globals.one_item_mode
 	update_oneitemmode_button_text()
+	for child in $GridContainer.get_children():
+		child.set_all_lights()
 
 func update_oneitemmode_button_text() -> void:
 	if Globals.one_item_mode:

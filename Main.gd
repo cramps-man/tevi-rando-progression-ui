@@ -37,6 +37,8 @@ func load_settings_data() -> void:
 	if settings_data.has("one_item_mode"):
 		Globals.one_item_mode = settings_data.one_item_mode
 		update_oneitemmode_button_text()
+		for child in $GridContainer.get_children():
+			child.set_all_lights()
 	if settings_data.has("is_window_transparent"):
 		Globals.is_window_transparent = settings_data.is_window_transparent
 		%TransparencyButton.button_pressed = Globals.is_window_transparent

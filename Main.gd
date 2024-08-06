@@ -70,7 +70,8 @@ func _on_default_size_button_pressed() -> void:
 	ProjectUtils.set_window_size(1.0)
 
 func _on_one_item_mode_button_pressed() -> void:
-	$OneTimeModePopupMenu.popup()
+	%OneTimeModePopupMenu.position = get_last_exclusive_window().position
+	%OneTimeModePopupMenu.popup()
 
 func _on_one_time_mode_popup_menu_id_pressed(id: int) -> void:
 	Globals.one_item_mode = !Globals.one_item_mode
@@ -80,7 +81,13 @@ func _on_one_time_mode_popup_menu_id_pressed(id: int) -> void:
 
 func update_oneitemmode_button_text() -> void:
 	if Globals.one_item_mode:
-		$OneItemModeButton.text = "One Item Mode ON"
+		%OneItemModeButton.text = "One Item Mode ON"
 	else:
-		$OneItemModeButton.text = "One Item Mode OFF"
+		%OneItemModeButton.text = "One Item Mode OFF"
 
+func _on_settings_button_pressed() -> void:
+	$SettingsWindow.position = get_window().position + Vector2i(-250, 500)
+	$SettingsWindow.popup()
+
+func _on_settings_window_close_requested() -> void:
+	$SettingsWindow.hide()

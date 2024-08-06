@@ -1,40 +1,50 @@
 extends Control
 
 const save_messsage_scene := preload("res://save_message.tscn")
+const item_data_filename := "user://savegame.save"
+const settings_data_filename := "user://settings.save"
 
 var current_data := {}
+var settings_data := {}
 
 func _ready() -> void:
 	Autosave.timeout.connect(_on_save_button_pressed)
+	load_item_data()
+	load_settings_data()
 	
-	var save_game = FileAccess.open("user://savegame.save", FileAccess.READ)
+func load_item_data() -> void:
+	var save_game = FileAccess.open(item_data_filename, FileAccess.READ)
 	var data = JSON.parse_string(save_game.get_line())
 	if data == null:
 		return
 	current_data = data
-	
-	if current_data.has("should_autosave"):
-		Autosave.autosave = current_data.should_autosave
-		update_autosave_button_text()
-	if current_data.has("one_item_mode"):
-		Globals.one_item_mode = current_data.one_item_mode
-		update_oneitemmode_button_text()
 
 	for child in $GridContainer.get_children():
 		child.load(current_data)
 	for child in $GridContainer2.get_children():
 		child.load(current_data)
+
+func load_settings_data() -> void:
+	var settings_data = FileAccess.open(settings_data_filename, FileAccess.READ)
+	var data = JSON.parse_string(settings_data.get_line())
+	if data == null:
+		return
+	settings_data = data
+	
+	if settings_data.has("should_autosave"):
+		Autosave.autosave = settings_data.should_autosave
+		update_autosave_button_text()
+	if settings_data.has("one_item_mode"):
+		Globals.one_item_mode = settings_data.one_item_mode
+		update_oneitemmode_button_text()
 
 func _on_save_button_pressed() -> void:
 	for child in $GridContainer.get_children():
 		child.save(current_data)
 	for child in $GridContainer2.get_children():
 		child.save(current_data)
-	
-	current_data.should_autosave = Autosave.autosave
-	current_data.one_item_mode = Globals.one_item_mode
 
-	var save_game = FileAccess.open("user://savegame.save", FileAccess.WRITE)
+	var save_game = FileAccess.open(item_data_filename, FileAccess.WRITE)
 	save_game.store_line(JSON.stringify(current_data))
 
 	animate_save_message()
@@ -52,6 +62,7 @@ func _on_popup_menu_id_pressed(id: int) -> void:
 func _on_autosave_button_pressed() -> void:
 	Autosave.autosave = !Autosave.autosave
 	update_autosave_button_text()
+	save_settings_data()
 
 func update_autosave_button_text() -> void:
 	if Autosave.autosave:
@@ -91,3 +102,11 @@ func _on_settings_button_pressed() -> void:
 
 func _on_settings_window_close_requested() -> void:
 	$SettingsWindow.hide()
+	save_settings_data()
+
+func save_settings_data() -> void:
+	settings_data.should_autosave = Autosave.autosave
+	settings_data.one_item_mode = Globals.one_item_mode
+
+	var settings_file = FileAccess.open(settings_data_filename, FileAccess.WRITE)
+	settings_file.store_line(JSON.stringify(settings_data))

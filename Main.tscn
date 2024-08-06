@@ -501,6 +501,13 @@ grow_vertical = 2
 layout_mode = 2
 text = "Default Size"
 
+[node name="TransparencyButton" type="CheckButton" parent="SettingsWindow/TabContainer/Window/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+button_pressed = true
+text = "Transparent BG"
+alignment = 1
+
 [node name="OneTimeModePopupMenu" type="PopupMenu" parent="SettingsWindow"]
 unique_name_in_owner = true
 position = Vector2i(0, 582)
@@ -517,4 +524,5 @@ item_0/id = 0
 [connection signal="close_requested" from="SettingsWindow" to="." method="_on_settings_window_close_requested"]
 [connection signal="pressed" from="SettingsWindow/TabContainer/Items/VBoxContainer/OneItemModeButton" to="." method="_on_one_item_mode_button_pressed"]
 [connection signal="pressed" from="SettingsWindow/TabContainer/Window/VBoxContainer/DefaultSizeButton" to="." method="_on_default_size_button_pressed"]
+[connection signal="toggled" from="SettingsWindow/TabContainer/Window/VBoxContainer/TransparencyButton" to="." method="_on_transparency_button_toggled"]
 [connection signal="id_pressed" from="SettingsWindow/OneTimeModePopupMenu" to="." method="_on_one_time_mode_popup_menu_id_pressed"]

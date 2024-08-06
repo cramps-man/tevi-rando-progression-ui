@@ -40,6 +40,10 @@ func load_settings_data() -> void:
 	if settings_data.has("is_window_transparent"):
 		Globals.is_window_transparent = settings_data.is_window_transparent
 		%TransparencyButton.button_pressed = Globals.is_window_transparent
+	if settings_data.has("bg_color"):
+		Globals.bg_color = Color(settings_data.bg_color)
+		$BackgroundColor.color = Globals.bg_color
+		%BackgroundColorPickerButton.color = Globals.bg_color
 
 func _on_save_button_pressed() -> void:
 	for child in $GridContainer.get_children():
@@ -111,10 +115,18 @@ func save_settings_data() -> void:
 	settings_data.should_autosave = Autosave.autosave
 	settings_data.one_item_mode = Globals.one_item_mode
 	settings_data.is_window_transparent = Globals.is_window_transparent
+	settings_data.bg_color = Globals.bg_color.to_html(true)
 
 	var settings_file = FileAccess.open(settings_data_filename, FileAccess.WRITE)
 	settings_file.store_line(JSON.stringify(settings_data))
 
 func _on_transparency_button_toggled(button_pressed: bool) -> void:
 	Globals.is_window_transparent = button_pressed
-	ProjectUtils.set_window_transparency(button_pressed)
+	if button_pressed:
+		$BackgroundColor.hide()
+	else:
+		$BackgroundColor.show()
+
+func _on_color_picker_button_color_changed(color: Color) -> void:
+	Globals.bg_color = color
+	$BackgroundColor.color = color

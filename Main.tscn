@@ -508,6 +508,21 @@ button_pressed = true
 text = "Transparent BG"
 alignment = 1
 
+[node name="HBoxContainer" type="HBoxContainer" parent="SettingsWindow/TabContainer/Window/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SettingsWindow/TabContainer/Window/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+text = "BG Color"
+horizontal_alignment = 1
+
+[node name="BackgroundColorPickerButton" type="ColorPickerButton" parent="SettingsWindow/TabContainer/Window/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+text = "BG color"
+
 [node name="OneTimeModePopupMenu" type="PopupMenu" parent="SettingsWindow"]
 unique_name_in_owner = true
 position = Vector2i(0, 582)
@@ -515,6 +530,17 @@ size = Vector2i(143, 35)
 item_count = 1
 item_0/text = "Confirm toggle"
 item_0/id = 0
+
+[node name="BackgroundColor" type="ColorRect" parent="."]
+visible = false
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 
 [connection signal="pressed" from="SaveButton" to="." method="_on_save_button_pressed"]
 [connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
@@ -525,4 +551,5 @@ item_0/id = 0
 [connection signal="pressed" from="SettingsWindow/TabContainer/Items/VBoxContainer/OneItemModeButton" to="." method="_on_one_item_mode_button_pressed"]
 [connection signal="pressed" from="SettingsWindow/TabContainer/Window/VBoxContainer/DefaultSizeButton" to="." method="_on_default_size_button_pressed"]
 [connection signal="toggled" from="SettingsWindow/TabContainer/Window/VBoxContainer/TransparencyButton" to="." method="_on_transparency_button_toggled"]
+[connection signal="color_changed" from="SettingsWindow/TabContainer/Window/VBoxContainer/HBoxContainer/BackgroundColorPickerButton" to="." method="_on_color_picker_button_color_changed"]
 [connection signal="id_pressed" from="SettingsWindow/OneTimeModePopupMenu" to="." method="_on_one_time_mode_popup_menu_id_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://gq3xwxul88v8"]
+[gd_scene load_steps=61 format=3 uid="uid://gq3xwxul88v8"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_3xaph"]
 [ext_resource type="PackedScene" uid="uid://dj3w7l4n2q43u" path="res://item_nodes/CheckmarkToggleItem.tscn" id="1_f4q4f"]
@@ -59,6 +59,10 @@
 [ext_resource type="Texture2D" uid="uid://7beuiyuujrb7" path="res://item images/questitem_0016.png" id="51_pgy6q"]
 [ext_resource type="Texture2D" uid="uid://bok58ba0637k1" path="res://item images/powerup_0015.png" id="56_vbmhj"]
 [ext_resource type="Texture2D" uid="uid://4jmgc0wpj6v7" path="res://item images/powerup_0002.png" id="59_unqwh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_oxpi1"]
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -541,6 +545,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+
+[node name="VersionNumber" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "version 1.3"
+label_settings = SubResource("LabelSettings_oxpi1")
 
 [connection signal="pressed" from="SaveButton" to="." method="_on_save_button_pressed"]
 [connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]

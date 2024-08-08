@@ -59,6 +59,7 @@ func _on_save_button_pressed() -> void:
 	animate_save_message()
 
 func _on_reset_button_pressed() -> void:
+	$ResetPopupMenu.position = get_window().position + Vector2i(0, 550)
 	$ResetPopupMenu.popup()
 
 func _on_popup_menu_id_pressed(id: int) -> void:

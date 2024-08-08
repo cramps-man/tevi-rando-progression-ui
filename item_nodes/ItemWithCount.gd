@@ -8,10 +8,13 @@ func _on_gui_input(event: InputEvent) -> void:
 		match event.button_index:
 			MOUSE_BUTTON_LEFT:
 				count += 1
-				update_display_count()
 			MOUSE_BUTTON_RIGHT:
 				count -= 1
-				update_display_count()
+			MOUSE_BUTTON_WHEEL_UP:
+				count += 1
+			MOUSE_BUTTON_WHEEL_DOWN:
+				count -= 1
+		update_display_count()
 		Autosave.trigger_autosave()
 
 func update_display_count() -> void:
